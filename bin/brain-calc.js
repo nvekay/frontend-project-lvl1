@@ -1,0 +1,3 @@
+const operators = ['+', '-', '*'];
+
+const calc = ()

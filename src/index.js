@@ -1,4 +1,4 @@
-import readlineSync from 'readline-sync';
+import readlineSync, { question } from 'readline-sync';
 
 export const roundCounter = 3;
 
@@ -11,7 +11,10 @@ export const gameEngine = (description, gameData) => {
     console.log(description);
 
     for (let i = 0; i < roundCounter; i += 1) {
+        const [rightAnswer, question] = gameData();
         console.log(`Question: ${question}`)
-        gameData()
+        const userAnswer = readlineSync.question('Your answer: ')
+        
+
     }
 };   
