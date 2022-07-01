@@ -4,11 +4,13 @@
 ### Code Climate
 <a href="https://codeclimate.com/github/nvekay/frontend-project-lvl1"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 
-### Пример установки пакета, запуска игры: "Проверка на чётность".
+### Пример установки пакета, запуска игры: "Проверка на чётность"
 [![asciicast](https://asciinema.org/a/wwIdTUBUO2cbL1Ut6lg05TjgO.svg)](https://asciinema.org/a/wwIdTUBUO2cbL1Ut6lg05TjgO)
-### Пример запуска игры: "Калькулятор".
+### Пример запуска игры: "Калькулятор"
 [![asciicast](https://asciinema.org/a/ZNMKkN9kHb9rY4AUsCTz3gBpk.svg)](https://asciinema.org/a/ZNMKkN9kHb9rY4AUsCTz3gBpk)
-### Пример запуска игры: "НОД".
+### Пример запуска игры: "НОД"
 [![asciicast](https://asciinema.org/a/YkwHMVzgFCxJDrRtTTCnye65L.svg)](https://asciinema.org/a/YkwHMVzgFCxJDrRtTTCnye65L)
-### Пример запуска игры: "Арифметическая прогрессия".
+### Пример запуска игры: "Арифметическая прогрессия"
 [![asciicast](https://asciinema.org/a/8Sv72xVYNOlI9ovK61Px7wJVU.svg)](https://asciinema.org/a/8Sv72xVYNOlI9ovK61Px7wJVU)
+### Пример запуска игры: "Простое ли число?"
+[![asciicast](https://asciinema.org/a/v7Wf4NM73eCPCmonXjOjHyRfD.svg)](https://asciinema.org/a/v7Wf4NM73eCPCmonXjOjHyRfD)
