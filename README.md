@@ -8,3 +8,5 @@
 [![asciicast](https://asciinema.org/a/wwIdTUBUO2cbL1Ut6lg05TjgO.svg)](https://asciinema.org/a/wwIdTUBUO2cbL1Ut6lg05TjgO)
 ### Пример запуска игры: "Калькулятор".
 [![asciicast](https://asciinema.org/a/ZNMKkN9kHb9rY4AUsCTz3gBpk.svg)](https://asciinema.org/a/ZNMKkN9kHb9rY4AUsCTz3gBpk)
+### Пример запуска игры: "НОД".
+[![asciicast](https://asciinema.org/a/YkwHMVzgFCxJDrRtTTCnye65L.svg)](https://asciinema.org/a/YkwHMVzgFCxJDrRtTTCnye65L)

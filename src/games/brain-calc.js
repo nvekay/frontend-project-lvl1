@@ -5,9 +5,9 @@ import { getRandomInt } from '../randomGenerator.js'
 
 const description = 'What is the result of the expression?';
 
-const signs = ['+', '-', '*'];
 
 const gameData = () => {
+const signs = ['+', '-', '*'];   
 const number1 = getRandomInt(50, 100);
 const number2 = getRandomInt(1, 49);   
 const randomSign = signs[Math.floor(Math.random() * signs.length)]; 
@@ -26,6 +26,6 @@ switch (randomSign) {
 
     }
     return rightAnswerAndQustion;    
-}
+};
 
 gameEngine(description, gameData);
