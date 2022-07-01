@@ -1,4 +1,4 @@
-import readlineSync, { question } from 'readline-sync';
+import readlineSync from 'readline-sync';
 
 export const roundCounter = 3;
 
@@ -14,7 +14,12 @@ export const gameEngine = (description, gameData) => {
         const [rightAnswer, question] = gameData();
         console.log(`Question: ${question}`)
         const userAnswer = readlineSync.question('Your answer: ')
-        
-
-    }
+        if (String(rightAnswer) === String(userAnswer)) {
+            console.log('Correct!');
+        } else {
+            console.log(`'${userAnswer}'is wrong answer ;(. Correct answer was '${rightAnswer}'.\nLet's try again,${userName}`);
+            return;
+        } 
+    } 
+    console.log(`Congratulations, ${userName}!`);
 };   

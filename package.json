@@ -18,7 +18,8 @@
   },
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js"
+    "brain-even": "src/games/brain-even.js",
+    "brain-calc": "src/games/brain-calc.js"
   },
   "homepage": "https://github.com/nvekay/frontend-project-lvl1#readme",
   "devDependencies": {
