@@ -9,12 +9,14 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'no-console': 'off',
+    "parser": "babel-eslint",
+    'no-console': 'on',
     "import/no-named-as-default": 0,
     "import/extensions": [
       "error",
       "ignorePackages",
       {
+        "import/no-named-as-default": 0,
         "js": "always",
         "jsx": "always",
         "ts": "always",
