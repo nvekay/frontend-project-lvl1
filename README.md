@@ -6,7 +6,9 @@
 
 ### How to install
 1.Clone this repository
+
 2.Run the command: make install
+
 3.Run the command: npm link
 
 ### Even-game
