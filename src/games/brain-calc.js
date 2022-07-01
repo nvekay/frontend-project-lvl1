@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 
 import { gameEngine } from '../index.js'
 import { getRandomInt } from '../randomGenerator.js'
@@ -28,4 +27,5 @@ switch (randomSign) {
     return rightAnswerAndQustion;    
 };
 
-gameEngine(description, gameData);
+const game = () => gameEngine(description, gameData);
+export default game;

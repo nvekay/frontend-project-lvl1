@@ -10,3 +10,5 @@
 [![asciicast](https://asciinema.org/a/ZNMKkN9kHb9rY4AUsCTz3gBpk.svg)](https://asciinema.org/a/ZNMKkN9kHb9rY4AUsCTz3gBpk)
 ### Пример запуска игры: "НОД".
 [![asciicast](https://asciinema.org/a/YkwHMVzgFCxJDrRtTTCnye65L.svg)](https://asciinema.org/a/YkwHMVzgFCxJDrRtTTCnye65L)
+### Пример запуска игры: "Арифметическая прогрессия".
+[![asciicast](https://asciinema.org/a/8Sv72xVYNOlI9ovK61Px7wJVU.svg)](https://asciinema.org/a/8Sv72xVYNOlI9ovK61Px7wJVU)
