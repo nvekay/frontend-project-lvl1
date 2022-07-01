@@ -1,7 +1,6 @@
 import { gameEngine } from '../index.js'
 import { getRandomInt } from '../randomGenerator.js'
 
-
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const gameData = () => {
