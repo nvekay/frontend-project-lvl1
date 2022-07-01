@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { gameEngine } from '../index.js';
 import getRandomInt from '../randomGenerator.js';
 
