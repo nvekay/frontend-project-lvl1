@@ -16,7 +16,7 @@ const gameData = () => {
       num2 -= num1;
       rightAnswerAndQuestion[0] = num2;
     }
-  }
+  }rightAnswerAndQuestion[0] = num1;
   return rightAnswerAndQuestion;
 };
 
