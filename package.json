@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "Проверка линтера пройдена",
+  "description": "This is a project of several thinking games,type one of the commands(brain-calc, brain-even, brain-gcd, brain-prime, brain-progression) to play the game",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
