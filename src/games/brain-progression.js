@@ -3,21 +3,25 @@ import getRandomInt from '../randomGenerator.js';
 
 const description = 'What number is missing in the progression?';
 
-const getRound = () => {
-  const stepOfProgression = getRandomInt(3, 8);
-  const lengthOfProgression = 10;
-  let startOfProgression = getRandomInt(1, 10);
-  const randomNum = getRandomInt(1, 9);
-  const progressionQuestion = [];
-
-  for (let i = 0; i < lengthOfProgression; i += 1) {
-    startOfProgression += stepOfProgression;
-    progressionQuestion.push(startOfProgression);
+const getProgresion = (progressionLength, startOfProgression, stepProgression) => {
+  const progression = [];
+  let num = startOfProgression;
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(num);
+    num += stepProgression;
   }
-  progressionQuestion[randomNum] = '..';
-  const rightAnswer = progressionQuestion[randomNum - 1] + stepOfProgression;
-  const question = progressionQuestion.join(' ');
-  return [rightAnswer, question];
+  return progression;
+};
+
+const getRound = () => {
+  const stepProgression = getRandomInt(1, 9);
+  const progressionLength = getRandomInt(7, 11);
+  const startOfProgression = getRandomInt(1, 10);
+  const progression = getProgresion(progressionLength, startOfProgression, stepProgression);
+  const randomNum = getRandomInt(0, progressionLength - 1);
+  const rightAnswer = (progression[randomNum]);
+  progression[randomNum] = '..';
+  return [rightAnswer, progression.join([' '])];
 };
 
 const playSomeGame = () => gameStart(description, getRound);

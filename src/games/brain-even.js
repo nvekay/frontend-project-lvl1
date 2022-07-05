@@ -3,14 +3,19 @@ import getRandomInt from '../randomGenerator.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const getRound = () => {
-  const question = getRandomInt(1, 40);
+const isEven = (question) => {
   let rightAnswer = '';
   if (question % 2 === 0) {
     rightAnswer = 'yes';
   } else {
     rightAnswer = 'no';
   }
+  return rightAnswer;
+};
+
+const getRound = () => {
+  const question = getRandomInt(1, 40);
+  const rightAnswer = isEven(question);
   return [rightAnswer, question];
 };
 
