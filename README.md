@@ -13,6 +13,8 @@
 
 3.Run the command: npm link
 
+4.Type one of the commands(brain-calc, brain-even, brain-gcd, brain-prime, brain-progression)
+
 ### Even-game
 [![asciicast](https://asciinema.org/a/wwIdTUBUO2cbL1Ut6lg05TjgO.svg)](https://asciinema.org/a/wwIdTUBUO2cbL1Ut6lg05TjgO)
 ### Calc-game
