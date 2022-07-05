@@ -1,29 +1,31 @@
-import { gameEngine } from '../index.js';
+import { gameStart } from '../index.js';
 import getRandomInt from '../randomGenerator.js';
 
 const description = 'What is the result of the expression?';
 
-const gameData = () => {
-  const signs = ['+', '-', '*'];
-  const number1 = getRandomInt(50, 100);
-  const number2 = getRandomInt(1, 49);
-  const randomSign = signs[Math.floor(Math.random() * signs.length)];
-  const rightAnswerAndQuestion = ['', [`${number1} ${randomSign} ${number2}`]];
+const calcRightAnswer = (number1, number2, randomSign) => {
   switch (randomSign) {
     case '+':
-      rightAnswerAndQuestion[0] = number1 + number2;
-      break;
+      return number1 + number2;
     case '-':
-      rightAnswerAndQuestion[0] = number1 - number2;
-      break;
+      return number1 - number2;
     case '*':
-      rightAnswerAndQuestion[0] = number1 * number2;
-      break;
+      return number1 * number2;
     default:
-      return `unknown operator : ${randomSign}`;
+      return null;
   }
-  return rightAnswerAndQuestion;
 };
 
-const game = () => gameEngine(description, gameData);
-export default game;
+const signs = ['+', '-', '*'];
+
+const getRound = () => {
+  const number1 = getRandomInt(1, 20);
+  const number2 = getRandomInt(1, 20);
+  const randomSign = signs[getRandomInt(0, 3)];
+  const question = `${number1} ${randomSign} ${number2}`;
+  const rightAnswer = calcRightAnswer(number1, number2, randomSign);
+  return [rightAnswer, question];
+};
+
+const playSomeGame = () => gameStart(description, getRound);
+export default playSomeGame;

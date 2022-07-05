@@ -1,17 +1,18 @@
-import { gameEngine } from '../index.js';
+import { gameStart } from '../index.js';
 import getRandomInt from '../randomGenerator.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const gameData = () => {
-  const rightAnswerAndQuestion = ['', getRandomInt(1, 40)];
-  if (rightAnswerAndQuestion[1] % 2 === 0) {
-    rightAnswerAndQuestion[0] = 'yes';
+const getRound = () => {
+  const question = getRandomInt(1, 40);
+  let rightAnswer = '';
+  if (question % 2 === 0) {
+    rightAnswer = 'yes';
   } else {
-    rightAnswerAndQuestion[0] = 'no';
+    rightAnswer = 'no';
   }
-  return rightAnswerAndQuestion;
+  return [rightAnswer, question];
 };
 
-const game = () => gameEngine(description, gameData);
-export default game;
+const playSomeGame = () => gameStart(description, getRound);
+export default playSomeGame;
