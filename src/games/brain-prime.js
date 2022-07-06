@@ -15,13 +15,7 @@ const getPrime = (num) => {
 };
 
 const getAnswer = (num) => {
-  let rightAnswer = '';
-  for (let i = 2; i < num; i += 1) {
-    if (getPrime(num) === false) {
-      rightAnswer = 'no';
-      break;
-    }rightAnswer = 'yes';
-  }
+  const rightAnswer = getPrime(num) === false ? 'no' : 'yes';
   return rightAnswer;
 };
 
