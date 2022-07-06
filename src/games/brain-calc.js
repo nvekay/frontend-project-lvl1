@@ -12,7 +12,7 @@ const calcRightAnswer = (number1, number2, randomSign) => {
     case '*':
       return number1 * number2;
     default:
-      return null;
+      throw new Error(`Unknown operator: '${randomSign}'!`);
   }
 };
 
@@ -21,11 +21,11 @@ const signs = ['+', '-', '*'];
 const getRound = () => {
   const number1 = getRandomInt(1, 20);
   const number2 = getRandomInt(1, 20);
-  const randomSign = signs[getRandomInt(0, 3)];
-  const question = `${number1} ${randomSign} ${number2}`;
-  const rightAnswer = calcRightAnswer(number1, number2, randomSign);
+  const getRandomSign = signs[getRandomInt(0, signs.length - 1)];
+  const question = `${number1} ${getRandomSign} ${number2}`;
+  const rightAnswer = calcRightAnswer(number1, number2, getRandomSign);
   return [rightAnswer, question];
 };
 
-const playSomeGame = () => gameStart(description, getRound);
-export default playSomeGame;
+const playCalcGame = () => gameStart(description, getRound);
+export default playCalcGame;

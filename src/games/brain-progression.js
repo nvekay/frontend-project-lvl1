@@ -24,5 +24,5 @@ const getRound = () => {
   return [rightAnswer, progression.join([' '])];
 };
 
-const playSomeGame = () => gameStart(description, getRound);
-export default playSomeGame;
+const playProgressionGame = () => gameStart(description, getRound);
+export default playProgressionGame;

@@ -4,19 +4,10 @@ import getRandomInt from '../randomGenerator.js';
 const description = 'Find the greatest common divisor of given numbers.';
 
 const getGcd = (number1, number2) => {
-  let num1 = number1;
-  let num2 = number2;
-  let rightAnswer = 1;
-  for (let i = 0; num1 !== num2; i += 1) {
-    if (num1 > num2) {
-      num1 -= num2;
-      rightAnswer = num1;
-    } else {
-      num2 -= num1;
-      rightAnswer = num2;
-    }
-  }rightAnswer = num1;
-  return rightAnswer;
+  if (number2 === 0) {
+    return number1;
+  }
+  return getGcd(number2, number1 % number2);
 };
 
 const getRound = () => {
@@ -28,5 +19,5 @@ const getRound = () => {
   return [rightAnswer, question];
 };
 
-const playSomeGame = () => gameStart(description, getRound);
-export default playSomeGame;
+const playGcdGame = () => gameStart(description, getRound);
+export default playGcdGame;
