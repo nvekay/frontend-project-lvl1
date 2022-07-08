@@ -3,24 +3,26 @@ import getRandomInt from '../randomGenerator.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const getPrime = (num) => {
-  let flag = true;
+const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  }
+
   for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
-      flag = false;
-      return flag;
+      return false;
     }
   }
-  return flag;
+  return true;
 };
 
 const getAnswer = (num) => {
-  const rightAnswer = getPrime(num) === false ? 'no' : 'yes';
+  const rightAnswer = isPrime(num) ? 'yes' : 'no';
   return rightAnswer;
 };
 
 const getRound = () => {
-  const question = getRandomInt(3, 30);
+  const question = getRandomInt(0, 30);
   const rightAnswer = getAnswer(question);
   return [rightAnswer, question];
 };

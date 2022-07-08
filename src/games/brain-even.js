@@ -5,19 +5,9 @@ const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const isEven = (num) => num % 2 === 0;
 
-const getAnswer = (num) => {
-  let rightAnswer = '';
-  if (isEven(num) === true) {
-    rightAnswer = 'yes';
-  } else {
-    rightAnswer = 'no';
-  }
-  return rightAnswer;
-};
-
 const getRound = () => {
   const question = getRandomInt(1, 40);
-  const rightAnswer = getAnswer(question);
+  const rightAnswer = isEven(question) ? 'yes' : 'no';
   return [rightAnswer, question];
 };
 
